@@ -1,7 +1,7 @@
 import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-import english from "./translations/english";
+// import english from "./translations/english";
 import spanish from "./translations/spanish";
 
 const locale = Intl.DateTimeFormat().resolvedOptions().locale;
@@ -11,16 +11,16 @@ i18n
   .init({
     // we init with resources
     resources: {
-      en: {
-        translations: english,
-      },
+      // en: {
+      //   translations: english,
+      // },
       es: {
         translations: spanish,
       },
     },
 
     lng: locale,
-    fallbackLng: "en",
+    fallbackLng: "es",
     debug: true,
 
     // have a common namespace used around the full app
