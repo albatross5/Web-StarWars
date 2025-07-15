@@ -1,0 +1,68 @@
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            padding: 0 3rem;
+            border-bottom: 1px solid #e5e7eb;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #111827;
+        }
+
+        .logo svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            color: #ce0058;
+        }
+
+        .logo span {
+            margin-left: 0.5rem;
+            font-size: 1.50rem;
+            font-weight: bold;
+        }
+
+        .nav {
+            margin-left: auto;
+            display: none;
+            gap: 1.5rem;
+        }
+
+        .nav a {
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #374151;
+            transition: color 0.3s;
+            font: 20px bold black;
+            
+        }
+
+        .nav a:hover {
+            color: #ce0058;
+        }
+
+        .menu-btn {
+            margin-left: 1rem;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+            cursor: pointer;
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            .nav {
+                display: flex;
+            }
+            .menu-btn {
+                display: none;
+            }
+        }

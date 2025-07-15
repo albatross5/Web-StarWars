@@ -1,16 +1,13 @@
 import "./Home.scss";
 import { useTranslation } from "react-i18next";
+import Header from "../../components/Header/Header";
 
 const Home = () => {
   const { t } = useTranslation();
 
   return (
     <>
-      {/* html */}
-      <div className="home">
-        <h1>Titulo</h1>
-        <p>parrafo</p>
-      </div>
+      <Header></Header>
     </>
   );
 };
