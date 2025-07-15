@@ -6,7 +6,11 @@ const Home = () => {
 
   return (
     <>
-      -- html --
+      {/* html */}
+      <div className="home">
+        <h1>Titulo</h1>
+        <p>parrafo</p>
+      </div>
     </>
   );
 };
