@@ -1,0 +1,16 @@
+//Barra lateral
+
+::-webkit-scrollbar {
+  height: calc(1rem + 2px);
+  width: calc(1rem + -2px);
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+  background: rgba(255, 253, 253, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-style: 2px solid #69022f;
+}

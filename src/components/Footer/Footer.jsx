@@ -1,10 +1,11 @@
 import "./Footer.scss";
 import { useTranslation } from "react-i18next";
 
-const { t } = useTranslation();
+
 const currentYear = new Date().getFullYear();
 
 const Footer = () => {
+const { t } = useTranslation();
   return (
     <footer className="footer">
         <div className="container">
