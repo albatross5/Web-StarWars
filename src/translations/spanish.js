@@ -59,7 +59,8 @@ export default {
 
     //Footer
     footer_brand: "STAR TRAVEL",
-    footer_description: "Tu compañero de viajes de confianza. Creamos experiencias únicas e inolvidables.",
+    footer_description: "Tu compañero de viajes de confianza.",
+    footer_description_long: "Creamos experiencias únicas e inolvidables.",
     footer_destinations: "Destinos",
     footer_services: "Servicios",
     footer_contact: "Contacto",

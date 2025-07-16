@@ -14,7 +14,10 @@ const { t } = useTranslation();
                     <div className="footer-brand">
                         <span>{t("footer_brand")}</span>
                     </div>
-                    <p className="footer-description">{t("footer_description")}</p>
+                    <p className="footer-description">{t("footer_description")}
+                        <br />
+                        {t("footer_description_long")}
+                    </p>
                 </div>
                 <div>
                     <h3 className="footer-title">{t("footer_destinations")}</h3>

@@ -2,7 +2,7 @@ import "./DestinationCard.scss";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 
-const DestinationCard = ({ badge, title, image, rating, reviews, price }) => {
+const DestinationCard = ({ badge, title, image, credits, rating, reviews, price }) => {
   const { t } = useTranslation();
 
   return (
@@ -26,7 +26,7 @@ const DestinationCard = ({ badge, title, image, rating, reviews, price }) => {
         </div>
         <p className="reviews">{reviews} {t("destinations_reviews")}</p>
         <div className="card-footer">
-          <span className="price">{t("destinations_price")} {price}</span>
+          <span className="price">{t("destinations_price")} {credits} {price}</span>
           <button className="btn btn-sm">{t("destinations_view_more")}</button>
         </div>
       </div>
@@ -38,6 +38,7 @@ DestinationCard.propTypes = {
   badge: PropTypes.string,
   title: PropTypes.string,
   image: PropTypes.string,
+  credits: PropTypes.string,
   rating: PropTypes.number,
   reviews: PropTypes.number,
   price: PropTypes.string,
