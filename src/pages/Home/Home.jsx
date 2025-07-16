@@ -12,57 +12,56 @@ const Home = () => {
   const destinations = [
     {
       badge: t("destinations_popular"),
-      title: t("destinations_bali"),
+      title: t("destinations_tatooine"),
       image:
-        "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "https://images.squarespace-cdn.com/content/v1/5fbc4a62c2150e62cfcb09aa/1620575206208-Z6LODN9KBU1SBRX3B0S7/tatooine.jpg",
       rating: 4.8,
       reviews: 234,
       price: "$899",
     },
     {
       badge: t("destinations_new"),
-      title: t("destinations_paris"),
+      title: t("destinations_coruscant"),
       image:
-        "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "https://images.theconversation.com/files/516919/original/file-20230322-984-capxez.jpeg?ixlib=rb-4.1.0&q=45&auto=format&w=754&fit=clip",
       rating: 4.9,
       reviews: 123,
       price: "$1,299",
     },
     {
       badge: t("destinations_featured"),
-      title: t("destinations_tokyo"),
+      title: t("destinations_naboo"),
       image:
-        "https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "https://imgix.ranker.com/list_img_v2/13203/3153203/original/3153203",
       rating: 4.7,
       reviews: 456,
       price: "$799",
     },
     {
       badge: t("destinations_featured"),
-      title: t("destinations_tokyo"),
+      title: t("destinations_alderaan"),
       image:
-        "https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      rating: 4.7,
+        "https://lumiere-a.akamaihd.net/v1/images/alderaan-main_f5b676cf.jpeg?region=0%2C0%2C1280%2C720",
       reviews: 456,
       price: "$799",
     },
     {
       badge: t("destinations_featured"),
-      title: t("destinations_tokyo"),
+      title: t("destinations_hoth"),
       image:
-        "https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "https://pm1.aminoapps.com/6592/17fa9c214dad4ac1671fb301286aa9095e3a5dab_hq.jpg",
       rating: 4.7,
       reviews: 456,
-      price: "$799",
+      price: "$399",
     },
     {
-      badge: t("destinations_featured"),
-      title: t("destinations_tokyo"),
+      badge: t("destinations_new"),
+      title: t("destinations_estrella"),
       image:
-        "https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "https://i.blogs.es/5382dc/death-star/1366_521.jpg",
       rating: 4.7,
       reviews: 456,
-      price: "$799",
+      price: "$1",
     },
   ];
 
@@ -153,9 +152,7 @@ const Home = () => {
           <div class="container">
             <div class="section-header">
               <h2>{t("features_title")}</h2>
-              <p>
-                {t("features_description")}
-              </p>
+              
             </div>
             <div class="features-grid">
 

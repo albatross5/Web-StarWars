@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 
 const FeatureCard = ({ icon, title, description }) => {
   return (
-    <div class="feature-card">
-    <img src={icon} alt={title}></img>
-      <h3 class="feature-title">{title}</h3>
-      <p class="feature-description">
+    <div className="feature-card">
+      <img className="feature-icon" src={icon} alt={title} />
+      <h3 className="feature-title">{title}</h3>
+      <p className="feature-description">
         {description}
       </p>
     </div>
