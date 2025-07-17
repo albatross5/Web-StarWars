@@ -17,7 +17,6 @@ const Home = () => {
         "https://images.squarespace-cdn.com/content/v1/5fbc4a62c2150e62cfcb09aa/1620575206208-Z6LODN9KBU1SBRX3B0S7/tatooine.jpg",
       rating: 4.8,
       reviews: 234,
-      credits: "", // Aqui van los Creditos Galacticos pero no funciona. He agregado en DestinationCard, he importado la imagen en local y lo he agregado aqui. Pero no va.
       price: "899",
     },
     {
@@ -27,7 +26,6 @@ const Home = () => {
         "https://images.theconversation.com/files/516919/original/file-20230322-984-capxez.jpeg?ixlib=rb-4.1.0&q=45&auto=format&w=754&fit=clip",
       rating: 4.9,
       reviews: 123,
-      credits: "",
       price: "1,299",
     },
     {
@@ -37,7 +35,6 @@ const Home = () => {
         "https://imgix.ranker.com/list_img_v2/13203/3153203/original/3153203",
       rating: 4.7,
       reviews: 456,
-      credits: "",
       price: "799",
     },
     {
@@ -47,7 +44,6 @@ const Home = () => {
         "https://lumiere-a.akamaihd.net/v1/images/alderaan-main_f5b676cf.jpeg?region=0%2C0%2C1280%2C720",
       rating: 4.7,
       reviews: 456,
-      credits: "",
       price: "799",
     },
     {
@@ -57,7 +53,6 @@ const Home = () => {
         "https://pm1.aminoapps.com/6592/17fa9c214dad4ac1671fb301286aa9095e3a5dab_hq.jpg",
       rating: 4.7,
       reviews: 456,
-      credits: "",
       price: "399",
     },
     {
@@ -67,7 +62,6 @@ const Home = () => {
         "https://i.blogs.es/5382dc/death-star/1366_521.jpg",
       rating: 4.7,
       reviews: 456,
-      credits: "",
       price: "1",
     },
   ];
@@ -149,7 +143,6 @@ const Home = () => {
                   rating={i.rating}
                   reviews={i.reviews}
                   price={i.price}
-                  credits={i.credits}
                 />
               ))}
             </div>
