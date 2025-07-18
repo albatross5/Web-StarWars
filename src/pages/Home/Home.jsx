@@ -9,7 +9,8 @@ import FeatureCard from "../../components/FeatureCard/FeatureCard";
 const Home = () => {
   const { t } = useTranslation();
 
-  const destinations = [ // Array que contiene los destinos destacados
+  const destinations = [ // Array que contiene los destinos destacados. Viene del fichero DestinationCard.jsx. En esta array se definen los destinos con sus propiedades.
+    // Cada objeto representa un destino con sus propiedades: badge, title, image, rating, reviews y price.
     {
       badge: t("destinations_popular"),
       title: t("destinations_tatooine"),
@@ -66,7 +67,8 @@ const Home = () => {
     },
   ];
 
-  const features = [ // Array que contiene las características destacadas
+  const features = [ // Array que contiene las características destacadas. Viene del fichero FeatureCard.jsx. En esta array se definen las características con sus propiedades.
+    // Cada objeto representa una característica con sus propiedades: icon, title y description.
     {
       icon: "/assets/shield.svg",
       title: t("features_secure_travel"),
@@ -91,7 +93,7 @@ const Home = () => {
 
   return ( // Componente principal de la página de inicio
     <>
-      <Header></Header> {/* ________________________________Encabezado de la página IMPORTADA________________________________ */}
+      <Header></Header> {/* ________________________________Encabezado de la página IMPORTADA DE HEADER.JSX________________________________ */}
 
       <main>
         <section className="hero"> {/* ________________________________Seccion principal ________________________________*/}
@@ -112,9 +114,9 @@ const Home = () => {
           </div>
         </section>
 
-        <Search></Search> {/* ________________________________Seccion de busqueda de destinos IMPORTADA ________________________________*/}
+        <Search></Search> {/* ________________________________Seccion de busqueda de destinos IMPORTADA DE SEARCH.JSX________________________________*/}
 
-        <section id="destinos" className="destinations"> {/* ________________________________Seccion de destinos, importada desde un array ________________________________*/}
+        <section id="destinos" className="destinations"> {/* ______________Seccion de destinos, importada desde un array en la parte superior______________*/}
           <div className="container">
             <div className="section-header">
               <h2>{t("destinations_title")}</h2>
@@ -138,7 +140,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section id="servicios" className="features"> {/* ________________________________Seccion de servicios y ¿Porque? ________________________________*/}
+        <section id="servicios" className="features"> {/* ______________Seccion de servicios y ¿Porque? importada desde un array en la parte superior______________*/}
           <div className="container">
             <div className="section-header">
               <h2>{t("features_title")}</h2>
@@ -160,7 +162,7 @@ const Home = () => {
         </section>
       </main>
 
-      <Footer></Footer> {/* ________________________________Seccion de pie de pagina IMPORTADA ________________________________*/}
+      <Footer></Footer> {/* ________________________________Seccion de pie de pagina IMPORTADA DE FOOTER.JSX________________________________*/}
     </>
   );
 };

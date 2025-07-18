@@ -17,6 +17,8 @@ import { useTranslation } from "react-i18next";
 // 3. Ahora solo faltaria irnos a Home.jsx y y en las primeras lineas importar la dependencia de DestinationCard, crear el array (en el caso que
 //    queramos crearla, y lo siguiente seria llamarla por su nombre. EJEMPLO EN EL HOME.JSX)
 
+// 4. Exportar el componente DestinationCard para que pueda ser utilizado en otras partes de la aplicación.
+
 const DestinationCard = ({ badge, title, image, rating, reviews, price }) => {
   const { t } = useTranslation();
 
