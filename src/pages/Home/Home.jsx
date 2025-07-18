@@ -9,7 +9,7 @@ import FeatureCard from "../../components/FeatureCard/FeatureCard";
 const Home = () => {
   const { t } = useTranslation();
 
-  const destinations = [
+  const destinations = [ // Array que contiene los destinos destacados
     {
       badge: t("destinations_popular"),
       title: t("destinations_tatooine"),
@@ -66,7 +66,7 @@ const Home = () => {
     },
   ];
 
-  const features = [
+  const features = [ // Array que contiene las características destacadas
     {
       icon: "/assets/shield.svg",
       title: t("features_secure_travel"),
@@ -89,12 +89,12 @@ const Home = () => {
     },
   ];
 
-  return (
+  return ( // Componente principal de la página de inicio
     <>
-      <Header></Header>
+      <Header></Header> {/* ________________________________Encabezado de la página IMPORTADA________________________________ */}
 
       <main>
-        <section className="hero">
+        <section className="hero"> {/* ________________________________Seccion principal ________________________________*/}
           <div className="hero-content">
             <h1>
               {t("hero_title")}
@@ -103,17 +103,6 @@ const Home = () => {
             <p>{t("hero_description")}</p>
             <div className="hero-buttons">
               <a href="#" className="btn btn-primary">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <circle cx="11" cy="11" r="8" />
-                  <path d="m21 21-4.35-4.35" />
-                </svg>
                 {t("hero_link")}
               </a>
               <a href="#" className="btn btn-outline">
@@ -123,9 +112,9 @@ const Home = () => {
           </div>
         </section>
 
-        <Search></Search>
+        <Search></Search> {/* ________________________________Seccion de busqueda de destinos IMPORTADA ________________________________*/}
 
-        <section id="destinos" className="destinations">
+        <section id="destinos" className="destinations"> {/* ________________________________Seccion de destinos, importada desde un array ________________________________*/}
           <div className="container">
             <div className="section-header">
               <h2>{t("destinations_title")}</h2>
@@ -149,19 +138,18 @@ const Home = () => {
           </div>
         </section>
 
-        <section id="servicios" class="features">
-          <div class="container">
-            <div class="section-header">
+        <section id="servicios" className="features"> {/* ________________________________Seccion de servicios y ¿Porque? ________________________________*/}
+          <div className="container">
+            <div className="section-header">
               <h2>{t("features_title")}</h2>
               
             </div>
-            <div class="features-grid">
-
-             {features.map((i, index) => (
-              <FeatureCard
-                key={"feature-" + index}
-                icon={i.icon}
-                title={i.title}
+            <div className="features-grid">
+              {features.map((i, index) => (
+                <FeatureCard
+                  key={"feature-" + index}
+                  icon={i.icon}
+                  title={i.title}
                 description={i.description}
                 />
              ))}
@@ -171,7 +159,8 @@ const Home = () => {
           </div>
         </section>
       </main>
-      <Footer></Footer>
+
+      <Footer></Footer> {/* ________________________________Seccion de pie de pagina IMPORTADA ________________________________*/}
     </>
   );
 };

@@ -31,16 +31,11 @@
 //Barra lateral
 
 ::-webkit-scrollbar {
-  height: calc(1rem + 2px);
-  width: calc(1rem + -2px);
-}
-
-::-webkit-scrollbar-corner {
-  display: none;
-  background: rgba(255, 253, 253, 0);
+  width: 14px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #000000;
-  border-style: 2px solid #69022f;
+  border-radius: 5px;
+  border: 3px solid #f7f7f7;
+  background: #ea580c;
 }

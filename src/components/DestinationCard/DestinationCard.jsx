@@ -2,6 +2,21 @@ import "./DestinationCard.scss";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 
+// Pasos para crear un componente de tarjeta de destino:
+// 1. Importar las dependencias necesarias, en este caso "./DestinationCard.scss" para estilos y PropTypes para la validación de propiedades.
+//    También se importa useTranslation de "react-i18next" para manejar la traducción de textos.
+//    Asegúrate de que el archivo de estilos y las dependencias estén correctamente instaladas en tu proyecto.
+//    Este componente se encargará de mostrar información sobre un destino turístico, incluyendo una imagen,
+//    un título, una calificación, el número de reseñas y el precio del destino.
+
+// 2. Definir el componente DestinationCard.
+//    Primero tenemos que irnos abajo del todo y en las propTypes del DestinationCard, tenemos que agregar los que queremos.
+//    Lo siguiente sería llamar a las propiedades en la const de DestinationCard en la parte superior.
+//    Luego solo tenemos que llamarlas en el codigo y en la posicion deseada.
+
+// 3. Ahora solo faltaria irnos a Home.jsx y y en las primeras lineas importar la dependencia de DestinationCard, crear el array (en el caso que
+//    queramos crearla, y lo siguiente seria llamarla por su nombre. EJEMPLO EN EL HOME.JSX)
+
 const DestinationCard = ({ badge, title, image, rating, reviews, price }) => {
   const { t } = useTranslation();
 
