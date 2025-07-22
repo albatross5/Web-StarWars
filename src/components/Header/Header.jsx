@@ -17,7 +17,7 @@ const { t } = useTranslation();
       <nav className="nav">
         <a href="#destinos">{t("header_destinations")}</a>
         <a href="#servicios">{t("header_services")}</a>
-        <Link to="/Naves">{t("header_naves")}</Link>
+        <Link to="/Naves#naves">{t("header_naves")}</Link>
       </nav>
       <button className="menu-btn">
         <svg

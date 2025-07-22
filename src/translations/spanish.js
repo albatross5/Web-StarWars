@@ -6,7 +6,7 @@ export default {
     //Hero
     hero_title: "Descubre la Galaxia",
     hero_span:"Sin Límites",
-    hero_description: "Vive experiencias únicas y crea recuerdos inolvidables con STAR TRAVEL",
+    hero_description: "vive experiencias únicas y crea recuerdos inolvidables con STAR TRAVEL",
     hero_link: "Explorar Destinos",
     hero_show: "Ver Ofertas",
 

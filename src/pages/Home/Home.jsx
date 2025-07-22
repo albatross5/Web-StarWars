@@ -9,7 +9,8 @@ import FeatureCard from "../../components/FeatureCard/FeatureCard";
 const Home = () => {
   const { t } = useTranslation();
 
-  const destinations = [ // Array que contiene los destinos destacados. Viene del fichero DestinationCard.jsx. En esta array se definen los destinos con sus propiedades.
+  const destinations = [
+    // Array que contiene los destinos destacados. Viene del fichero DestinationCard.jsx. En esta array se definen los destinos con sus propiedades.
     // Cada objeto representa un destino con sus propiedades: badge, title, image, rating, reviews y price.
     {
       badge: t("destinations_popular"),
@@ -59,15 +60,15 @@ const Home = () => {
     {
       badge: t("destinations_new"),
       title: t("destinations_estrella"),
-      image:
-        "https://i.blogs.es/5382dc/death-star/1366_521.jpg",
+      image: "https://i.blogs.es/5382dc/death-star/1366_521.jpg",
       rating: 4.7,
       reviews: 456,
       price: "1",
     },
   ];
 
-  const features = [ // Array que contiene las características destacadas. Viene del fichero FeatureCard.jsx. En esta array se definen las características con sus propiedades.
+  const features = [
+    // Array que contiene las características destacadas. Viene del fichero FeatureCard.jsx. En esta array se definen las características con sus propiedades.
     // Cada objeto representa una característica con sus propiedades: icon, title y description.
     {
       icon: "/assets/shield.svg",
@@ -91,12 +92,15 @@ const Home = () => {
     },
   ];
 
-  return ( // Componente principal de la página de inicio
+  return (
+    // Componente principal de la página de inicio
     <>
-      <Header></Header> {/* ________________________________Encabezado de la página IMPORTADA DE HEADER.JSX________________________________ */}
-
+      <Header></Header>{" "}
+      {/* ________________________________Encabezado de la página IMPORTADA DE HEADER.JSX________________________________ */}
       <main>
-        <section className="hero"> {/* ________________________________Seccion principal ________________________________*/}
+        <section className="hero">
+          {" "}
+          {/* ________________________________Seccion principal ________________________________*/}
           <div className="hero-content">
             <h1>
               {t("hero_title")}
@@ -113,16 +117,15 @@ const Home = () => {
             </div>
           </div>
         </section>
-
-        <Search></Search> {/* ________________________________Seccion de busqueda de destinos IMPORTADA DE SEARCH.JSX________________________________*/}
-
-        <section id="destinos" className="destinations"> {/* ______________Seccion de destinos, importada desde un array en la parte superior______________*/}
+        <Search></Search>{" "}
+        {/* ________________________________Seccion de busqueda de destinos IMPORTADA DE SEARCH.JSX________________________________*/}
+        <section id="destinos" className="destinations">
+          {" "}
+          {/* ______________Seccion de destinos, importada desde un array en la parte superior______________*/}
           <div className="container">
             <div className="section-header">
               <h2>{t("destinations_title")}</h2>
-              <p>
-                {t("destinations_description")}
-              </p>
+              <p>{t("destinations_description")}</p>
             </div>
             <div className="destinations-grid">
               {destinations.map((i, index) => (
@@ -139,12 +142,12 @@ const Home = () => {
             </div>
           </div>
         </section>
-
-        <section id="servicios" className="features"> {/* ______________Seccion de servicios y ¿Porque? importada desde un array en la parte superior______________*/}
+        <section id="servicios" className="features">
+          {" "}
+          {/* ______________Seccion de servicios y ¿Porque? importada desde un array en la parte superior______________*/}
           <div className="container">
             <div className="section-header">
               <h2>{t("features_title")}</h2>
-              
             </div>
             <div className="features-grid">
               {features.map((i, index) => (
@@ -152,17 +155,15 @@ const Home = () => {
                   key={"feature-" + index}
                   icon={i.icon}
                   title={i.title}
-                description={i.description}
+                  description={i.description}
                 />
-             ))}
-
+              ))}
             </div>
-
           </div>
         </section>
       </main>
-
-      <Footer></Footer> {/* ________________________________Seccion de pie de pagina IMPORTADA DE FOOTER.JSX________________________________*/}
+      <Footer></Footer>{" "}
+      {/* ________________________________Seccion de pie de pagina IMPORTADA DE FOOTER.JSX________________________________*/}
     </>
   );
 };
