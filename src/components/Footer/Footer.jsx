@@ -22,10 +22,12 @@ const { t } = useTranslation();
                 <div>
                     <h3 className="footer-title">{t("footer_destinations")}</h3>
                     <ul className="footer-links">
-                        <li><a href="#">{t("footer_europe")}</a></li>
-                        <li><a href="#">{t("footer_asia")}</a></li>
-                        <li><a href="#">{t("footer_america")}</a></li>
-                        <li><a href="#">{t("footer_africa")}</a></li>
+                        <li><a href="#">{t("footer_tatooine")}</a></li>
+                        <li><a href="#">{t("footer_coruscant")}</a></li>
+                        <li><a href="#">{t("footer_naboo")}</a></li>
+                        <li><a href="#">{t("footer_alderaan")}</a></li>
+                        <li><a href="#">{t("footer_hoth")}</a></li>
+                        <li><a href="#">{t("footer_estrella")}</a></li>
                     </ul>
                 </div>
                 <div>

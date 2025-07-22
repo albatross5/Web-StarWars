@@ -1,5 +1,8 @@
 export default {
 
+    //HOME
+
+
     //Hero
     hero_title: "Descubre la Galaxia",
     hero_span:"Sin Límites",
@@ -11,8 +14,7 @@ export default {
     header_title: "STAR TRAVEL",
     header_destinations: "Destinos",
     header_services: "Servicios",
-    header_offers: "Ofertas",
-    header_contact: "Contacto",
+    header_naves: "Naves",
 
     //Search
     search_destination_label: "Destino",
@@ -64,18 +66,63 @@ export default {
     footer_destinations: "Destinos",
     footer_services: "Servicios",
     footer_contact: "Contacto",
-    footer_europe: "Europa",
-    footer_asia: "Asia",
-    footer_america: "América",
-    footer_africa: "África",
-    footer_flights: "Vuelos",
-    footer_hotels: "Hoteles",
-    footer_packages: "Paquetes",
-    footer_insurance: "Seguros",
+    footer_tatooine: "Tatooine",
+    footer_coruscant: "Coruscant",
+    footer_naboo: "Naboo",
+    footer_alderaan: "Alderaan",
+    footer_hoth: "Hoth",
+    footer_estrella: "Estrella de la Muerte",
+    footer_flights: "vuelos",
+    footer_hotels: "hoteles",
+    footer_packages: "paquetes",
+    footer_insurance: "seguros",
     footer_email: "info@startravel.com",
     footer_phone: "+34 678 67 67 67",
     footer_address: "Barcelona, España",
     footer_rights: "Todos los derechos reservados.",
     footer_copyright: "© STAR TRAVEL",
+
+    //NAVES
+
+    //Hero
+    naves_title: "Tipos de Naves Disponibles",
+
+    //NaveCard
+    label_capacity: "Capacidad",
+    label_range: "Alcance",
+    label_speed: "Velocidad",
+    label_comfort: "Comodidad",
+    
+    // NaveCard - Xwing
+    ncard_title_xwing: "x-Wing",
+    ncard_description_xwing: "El x-Wing es una nave de combate estelar icónica, conocida por su velocidad y maniobrabilidad. Ideal para misiones de ataque y defensa.",
+    ncard_passenger_xwing: "1 piloto",
+    ncard_km_xwing: "1,000 km",
+    ncard_speed_xwing: "1,200 km/h",
+    ncard_comfort_xwing: "Estándar",
+
+    // NaveCard - Tie Fighter
+    ncard_title_tiefighter: "TIE Fighter",
+    ncard_description_tiefighter: "El TIE Fighter es la nave de combate principal del Imperio Galáctico, famosa por su velocidad y agilidad en el espacio. Perfecta para misiones de patrulla y combate.",
+    ncard_passenger_tiefighter: "1 piloto",
+    ncard_km_tiefighter: "1,000 km",
+    ncard_speed_tiefighter: "1,200 km/h",
+    ncard_comfort_tiefighter: "Estándar",
+
+    // NaveCard - N1 Naboo Fighter
+    ncard_title_n1naboo: "N1 Naboo Fighter",
+    ncard_description_n1naboo: "El N1 Naboo Fighter es una nave elegante y rápida, utilizada por la Reina de Naboo. Ideal para misiones de exploración y combate ligero.",
+    ncard_passenger_n1naboo: "1 piloto",
+    ncard_km_n1naboo: "1,200 km",
+    ncard_speed_n1naboo: "1,500 km/h",
+    ncard_comfort_n1naboo: "Alta",
+
+    // NaveCard - Jedi Starfighter
+    ncard_title_jedi: "Jedi Starfighter",
+    ncard_description_jedi: "El Jedi Starfighter es una nave avanzada utilizada por los Caballeros Jedi. Con tecnología de vanguardia, es perfecta para misiones de exploración y combate.",
+    ncard_passenger_jedi: "1 piloto",
+    ncard_km_jedi: "1,500 km",
+    ncard_speed_jedi: "1,800 km/h",
+    ncard_comfort_jedi: "Alta",
 
 };

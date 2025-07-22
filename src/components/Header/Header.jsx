@@ -1,5 +1,7 @@
 import "./Header.scss";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -13,10 +15,9 @@ const { t } = useTranslation();
         <span>{t("header_title")}</span>
       </a>
       <nav className="nav">
-        <a href="#">{t("header_destinations")}</a>
-        <a href="#">{t("header_services")}</a>
-        <a href="#">{t("header_offers")}</a>
-        <a href="#">{t("header_contact")}</a>
+        <a href="#destinos">{t("header_destinations")}</a>
+        <a href="#servicios">{t("header_services")}</a>
+        <Link to="/Naves">{t("header_naves")}</Link>
       </nav>
       <button className="menu-btn">
         <svg

@@ -4,7 +4,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from "./pages/Home/Home";
+import Nave from "./pages/Home/Naves";
 import PropTypes from "prop-types";
+
 
 function App() {
 
@@ -12,6 +14,10 @@ function App() {
     {
       path: "/",
       element: <Home />,
+    },
+    {
+      path: "/Naves",
+      element: <Nave />,
     },
   ]);
 

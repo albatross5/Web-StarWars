@@ -1,0 +1,82 @@
+        .aircraft-card {
+            max-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e9ecef;
+        }
+
+        .aircraft-card {
+            max-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+            border: 1px solid #e9ecef;
+            color: #000;
+        }
+
+        .aircraft-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            background-color: #000;
+            color: #fff;
+        }
+
+        .aircraft-card:hover h3,
+        .aircraft-card:hover p,
+        .aircraft-card:hover .spec-label,
+        .aircraft-card:hover .spec-value {
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .aircraft-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+        
+        .aircraft-card img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 1.5rem;
+            border-radius: 10px;
+        }
+
+
+        .aircraft-specs {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .aircraft-specs li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f1f3f4;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .aircraft-specs li:last-child {
+            border-bottom: none;
+        }
+
+        .spec-label {
+            font-weight: 600;
+            color: #555;
+        }
+
+        .spec-value {
+            color: #777;
+        }
