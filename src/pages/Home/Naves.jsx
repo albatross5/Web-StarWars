@@ -73,7 +73,7 @@ const naves2 = [
       comfort: t("ncard_comfort_tieinterceptor"),
     },
     {
-      title: t("ncard_title_alau)"),
+      title: t("ncard_title_alau"),
       image: "/assets/alau.png",
       description: t("ncard_description_alau"),
       passenger: t("ncard_passenger_alau"),

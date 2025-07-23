@@ -14,3 +14,10 @@
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             margin-top: 2rem;
         }
+
+        #naves .aircraft-grid > *:hover {
+            box-shadow: 
+            0 14px 28px rgba(245, 159, 0, 0.1),
+            0 10px 10px rgba(245, 159, 0, 0.05);
+            transform: translateY(-9px) scale(1.05);
+        }
