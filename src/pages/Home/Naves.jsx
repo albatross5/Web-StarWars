@@ -6,7 +6,7 @@ import NaveCard from "../../components/NaveCard/NaveCard";
 
 const Naves = () => {
 const { t } = useTranslation();
-const naves = [
+const naves1 = [
     {
       title: t("ncard_title_xwing"),
       image: "https://png.pngtree.com/png-vector/20250605/ourmid/pngtree-x-wing-fighter-star-wars-spaceship-3d-render-png-image_16468301.png",
@@ -42,25 +42,45 @@ const naves = [
       km: t("ncard_km_jedi"),
       speed: t("ncard_speed_jedi"),
       comfort: t("ncard_comfort_jedi"),
+    }
+];
+const naves2 = [
+    {
+      title: t("ncard_title_alconmil"),
+      image: "https://www.teleadhesivo.com/es/img/starwars009-png/folder/products-detalle-png/vinilos-decorativos-halcon-milenario.png",
+      description: t("ncard_description_alconmil"),
+      passenger: t("ncard_passenger_alconmil"),
+      km: t("ncard_km_alconmil"),
+      speed: t("ncard_speed_alconmil"),
+      comfort: t("ncard_comfort_alconmil"),
     },
-    // {
-    //   title: t(""),
-    //   image: "",
-    //   description: t(""),
-    //   passenger: t(""),
-    //   km: t(""),
-    //   speed: t(""),
-    //   comfort: t(""),
-    // },
-    // {
-    //   title: t(""),
-    //   image: "",
-    //   description: t(""),
-    //   passenger: t(""),
-    //   km: t(""),
-    //   speed: t(""),
-    //   comfort: t(""),
-    // },
+    {
+      title: t("ncard_title_tantivel"),
+      image: "/assets/tantivel.png",
+      description: t("ncard_description_tantivel"),
+      passenger: t("ncard_passenger_tantivel"),
+      km: t("ncard_km_tantivel"),
+      speed: t("ncard_speed_tantivel"),
+      comfort: t("ncard_comfort_tantivel"),
+    },
+    {
+      title: t("ncard_title_tieinterceptor"),
+      image: "/assets/tiein.png",
+      description: t("ncard_description_tieinterceptor"),
+      passenger: t("ncard_passenger_tieinterceptor"),
+      km: t("ncard_km_tieinterceptor"),
+      speed: t("ncard_speed_tieinterceptor"),
+      comfort: t("ncard_comfort_tieinterceptor"),
+    },
+    {
+      title: t("ncard_title_alau)"),
+      image: "/assets/alau.png",
+      description: t("ncard_description_alau"),
+      passenger: t("ncard_passenger_alau"),
+      km: t("ncard_km_alau"),
+      speed: t("ncard_speed_alau"),
+      comfort: t("ncard_comfort_alau"),
+    },
 ];
 
 return ( // Componente principal de la página de Naves
@@ -71,9 +91,24 @@ return ( // Componente principal de la página de Naves
                 <div class="container">
                     <h2 class="section-title">{t("naves_title")}</h2>
                     <div class="aircraft-grid">
-                        {naves.map((i, index) => (
+                        {naves1.map((i, index) => (
                             <NaveCard
-                                key={"nave-" + index}
+                                key={"nave1-" + index}
+                                title={i.title}
+                                image={i.image}
+                                description={i.description}
+                                passenger={i.passenger}
+                                km={i.km}
+                                speed={i.speed}
+                                comfort={i.comfort}
+                            />
+                        ))}
+                    </div>
+                    <br />
+                    <div class="aircraft-grid">
+                        {naves2.map((i, index) => (
+                            <NaveCard
+                                key={"nave2-" + index}
                                 title={i.title}
                                 image={i.image}
                                 description={i.description}

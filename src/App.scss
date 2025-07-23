@@ -44,7 +44,14 @@
   background: #ea580c;
 }
 
-//Cursor
+
+/* Cursor */
+// body {
+//   cursor: url('/assets/cursor_resized_white.png'), auto;
+// }
+
 body {
-    cursor: url('/assets/cursor_resized.png'), auto;
+  cursor: url('/assets/cursor_resized_black.png'), auto;
 }
+
+

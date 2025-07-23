@@ -37,23 +37,21 @@ export default {
     destinations_estrella: "Estrella de la Muerte",
     destinations_reviews: "reseñas",
     destinations_price: "Desde",
-    destinations_view_more: "Ver más",
+    destinations_view_more: "ver más",
 
     destinations_popular_title: "Destinos Populares",
     destinations_description: "Descubre los lugares más increíbles del mundo con nuestras ofertas exclusivas",
 
     // Features
     features_title: "¿Por qué elegir STAR TRAVEL?",
-    features_secure_travel: "Viajes Seguros",
+    features_secure_travel: "viajes Seguros",
     features_secure_travel_description: "Garantía total y seguro de viaje incluido en todos nuestros paquetes",
-    features_personalized: "Viajes Personalizados",
+    features_personalized: "viajes Personalizados",
     features_personalized_description: "Itinerarios a medida para cada viajero",
     features_24_7_support: "Soporte",
     features_24_7_support_description: "Asistencia disponible en cualquier momento",
     features_best_prices: "Mejores Precios",
     features_best_prices_description: "Ofertas exclusivas y precios imbatibles",
-    features_sustainable: "Viajes Sostenibles",
-    features_sustainable_description: "Comprometidos con el turismo responsable y sostenible",
     features_quality: "Calidad Garantizada",
     features_quality_description: "Colaboramos con los mejores proveedores y guías locales",
     features_exclusive_offers: "Ofertas Exclusivas",
@@ -124,5 +122,37 @@ export default {
     ncard_km_jedi: "1,500 km",
     ncard_speed_jedi: "1,800 km/h",
     ncard_comfort_jedi: "Alta",
+
+    // NaveCard - AlconMilenario
+    ncard_title_alconmil: "Alcon Milenario",
+    ncard_description_alconmil: "El Alcon Milenario es una de las naves más rápidas de la galaxia, famosa por su velocidad y capacidad de evasión. Ideal para misiones de contrabando y exploración.",
+    ncard_passenger_alconmil: "Hasta 6 pasajeros",
+    ncard_km_alconmil: "1,500 km",
+    ncard_speed_alconmil: "1,800 km/h",
+    ncard_comfort_alconmil: "Alta",
+
+    // NaveCard - Tantivel
+    ncard_title_tantivel: "Tantive IV",
+    ncard_description_tantivel: "El Tantive IV es una nave de transporte estelar utilizada por la Alianza Rebelde. Con capacidad para transportar tropas y suministros, es ideal para misiones de apoyo y logística.",
+    ncard_passenger_tantivel: "Hasta 20 pasajeros",
+    ncard_km_tantivel: "1,200 km",
+    ncard_speed_tantivel: "1,000 km/h",
+    ncard_comfort_tantivel: "Estándar",
+
+    // NaveCard - Tie Interceptor
+    ncard_title_tieinterceptor: "TIE Interceptor",
+    ncard_description_tieinterceptor: "El TIE Interceptor es una versión mejorada del TIE Fighter, con mayor velocidad y maniobrabilidad. Ideal para misiones de combate avanzado.",
+    ncard_passenger_tieinterceptor: "1 piloto",
+    ncard_km_tieinterceptor: "1,200 km",
+    ncard_speed_tieinterceptor: "1,500 km/h",
+    ncard_comfort_tieinterceptor: "Estándar",
+
+    // NaveCard - Ala-U
+    ncard_title_alau: "Ala-U",
+    ncard_description_alau: "El Ala-U es una nave de combate estelar utilizada por la Alianza Rebelde. Con su diseño aerodinámico y tecnología avanzada, es ideal para misiones de ataque y defensa.",
+    ncard_passenger_alau: "1 piloto",
+    ncard_km_alau: "1,000 km",
+    ncard_speed_alau: "1,200 km/h",
+    ncard_comfort_alau: "Estándar",
 
 };

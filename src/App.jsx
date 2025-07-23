@@ -1,4 +1,4 @@
-import "./App.scss";
+ import "./App.scss";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -20,6 +20,7 @@ function App() {
       element: <Nave />,
     },
   ]);
+  
 
   return (
     <div>
@@ -33,5 +34,7 @@ App.propTypes = {
   redirectPath: PropTypes.string,
   children: PropTypes.node,
 };
+
+
 
 export default App;
