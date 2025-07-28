@@ -49,7 +49,7 @@ const { t } = useTranslation();
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>{currentYear} {t("footer_brand")} {t("footer_rights")}</p>
+                <p>{currentYear} {t("header_title")} {t("footer_rights")}</p>
             </div>
         </div>
     </footer>

@@ -2,7 +2,6 @@ export default {
 
     //HOME
 
-
     //Hero
     hero_title: "Descubre la Galaxia",
     hero_span:"Sin Límites",
@@ -58,7 +57,6 @@ export default {
     features_exclusive_offers_description: "Acceso a promociones y descuentos especiales para nuestros clientes",
 
     //Footer
-    footer_brand: "STAR TRAVEL",
     footer_description: "Tu compañero de viajes de confianza.",
     footer_description_long: "Creamos experiencias únicas e inolvidables.",
     footer_destinations: "Destinos",
